@@ -1,4 +1,4 @@
-//a function to force a sequence of your code using Promises
+//read README.md
 let order = function(){ 
 
     return new Promise(function(resolve, reject){
@@ -11,8 +11,6 @@ let order = function(){
 order()
 .then(()=>{
 
-    //use only async for sync code..don't mix the two
-    //for syncing and guarntee the order follow the next .then
     return new Promise(function(resolve, reject){
 
         setTimeout(() => {
