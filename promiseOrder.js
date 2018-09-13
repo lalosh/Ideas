@@ -1,4 +1,9 @@
 //read README.md
+/*
+a function to force a sequence of your code blocks using Promises
+
+inside .then use only async or sync code..don't mix the two to sync and guarntee the order follow the next .then simply
+*/
 let order = function(){ 
 
     return new Promise(function(resolve, reject){
@@ -10,7 +15,7 @@ let order = function(){
 
 order()
 .then(()=>{
-
+//want to use async code
     return new Promise(function(resolve, reject){
 
         setTimeout(() => {
@@ -21,7 +26,7 @@ order()
     })
 })
 .then(()=>{
-    
+    //using normal sync code
     console.log(3)
 })
 .then(()=>{
